@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Fulhera Municipality</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="navigation.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-wrapper">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <!-- <img src="path/to/your/logo.svg" alt="Fulhera Municipality Logo"> -->
+          <a href="index.html" class="logo-link"><h1>Fulhera Municipality</h1></a>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" data-key="home">Home</a>
+          <a href="services.html" data-key="services">Services</a>
+          <a href="updates.html" data-key="dailyUpdates">Daily Updates</a>
+          <a href="info.html" data-key="informations">Information</a>
+          <a href="health.html" data-key="healthPost">Health Post</a>
+          <a href="map.html" data-key="map">Map</a>
+          <a href="contact.html" data-key="contacts" class="active">Contact</a>
+        </div>
+        <div class="nav-search">
+          <input type="search" placeholder="Search...">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <button class="nav-mobile-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="contact-section">
+    <h1><i class="fas fa-envelope-open-text"></i> Get In Touch</h1>
+    <p class="section-intro">We are here to help. Reach out to us through any of the following channels or use the contact form below.</p>
+    
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong><br>Fulhera Municipality Office,<br>Main Road, Fulhera,<br>Odisha, India - 7600XX</p>
+        <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong><br><a href="tel:+911234567890">+91-123-456-7890</a> (General Enquiries)<br><a href="tel:+919876543210">+91-987-654-3210</a> (Emergency Helpline)</p>
+        <p><i class="fas fa-envelope"></i> <strong>Email:</strong><br><a href="mailto:info@fulhera.gov.in">info@fulhera.gov.in</a><br><a href="mailto:support@fulhera.gov.in">support@fulhera.gov.in</a></p>
+        <p><i class="fas fa-clock"></i> <strong>Office Hours:</strong><br>Monday - Friday: 10:00 AM - 5:00 PM<br>Saturday: 10:00 AM - 1:00 PM<br>Sunday & Public Holidays: Closed</p>
+        <div class="social-links">
+          <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      
+      <div class="contact-form-container">
+        <h2>Send Us a Message</h2>
+        <form id="contactForm" action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number (Optional):</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+<script src="navigation.js"></script>
+<script>
+  // Basic form submission handling (can be expanded)
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent actual submission for this example
+    alert('Thank you for your message! We will get back to you soon.');
+    this.reset(); // Reset form fields
+  });
+</script>
+</body>
+</html>

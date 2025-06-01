@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Fulhera Municipality</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="services.css">
+  <link rel="stylesheet" href="navigation.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-wrapper">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <!-- <img src="path/to/your/logo.svg" alt="Fulhera Municipality Logo"> -->
+          <a href="index.html" class="logo-link"><h1>Fulhera Municipality</h1></a>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" data-key="home">Home</a>
+          <a href="services.html" data-key="services" class="active">Services</a>
+          <a href="updates.html" data-key="dailyUpdates">Daily Updates</a>
+          <a href="info.html" data-key="informations">Information</a>
+          <a href="health.html" data-key="healthPost">Health Post</a>
+          <a href="map.html" data-key="map">Map</a>
+          <a href="contact.html" data-key="contacts">Contact</a>
+        </div>
+        <div class="nav-search">
+          <input type="search" placeholder="Search...">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <button class="nav-mobile-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="services-section">
+    <div class="services-header">
+      <h1>Municipal Services & Alerts</h1>
+      <p>Stay informed with the latest updates on municipal services and important alerts for Fulhera residents.</p>
+    </div>
+
+    <div class="services-controls">
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="serviceSearch" placeholder="Search services or alerts...">
+      </div>
+      <div class="filter-dropdown">
+        <select id="categoryFilter">
+          <option value="all">All Categories</option>
+          <option value="utilities">Utilities</option>
+          <option value="safety">Public Safety</option>
+          <option value="community">Community</option>
+          <option value="administrative">Administrative</option>
+          <option value="alerts">Alerts</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="services-grid" id="servicesGrid">
+      <!-- Original Service: Public Safety -->
+      <div class="service-card" data-category="safety" data-title="Public Safety" data-description="Includes emergency services, fire department, disaster management and community policing.">
+        <div class="service-card-header">
+          <div class="service-title-group">
+            <i class="fa-solid fa-shield-halved"></i> <!-- Icon for Public Safety -->
+            <h2>Public Safety</h2>
+          </div>
+          <span class="service-category info">Service</span>
+        </div>
+        <div class="service-card-body">
+          <p>Includes emergency services, fire department, disaster management and community policing. Our teams are dedicated to keeping Fulhera safe.</p>
+        </div>
+        <div class="service-card-footer">
+          <span>Ongoing Service</span>
+        </div>
+      </div>
+
+      <!-- Original Service: Transparency -->
+      <div class="service-card" data-category="administrative" data-title="Transparency in Governance" data-description="Public records, RTI, and administrative transparency for better governance.">
+        <div class="service-card-header">
+          <div class="service-title-group">
+            <i class="fa-solid fa-eye"></i> <!-- Icon for Transparency -->
+            <h2>Transparency</h2>
+          </div>
+          <span class="service-category info">Initiative</span>
+        </div>
+        <div class="service-card-body">
+          <p>Access public records, Right to Information (RTI) details, and learn about our commitment to administrative transparency for better governance.</p>
+        </div>
+        <div class="service-card-footer">
+          <span>Core Value</span>
+        </div>
+      </div>
+
+      <!-- Original Service: Information & Resources -->
+      <div class="service-card" data-category="community" data-title="Information & Resources" data-description="Access to citizen guides, e-learning, municipal rules, and forms.">
+        <div class="service-card-header">
+          <div class="service-title-group">
+            <i class="fa-solid fa-book-open-reader"></i> <!-- Icon for Information -->
+            <h2>Information & Resources</h2>
+          </div>
+          <span class="service-category info">Resource Hub</span>
+        </div>
+        <div class="service-card-body">
+          <p>Find citizen guides, access e-learning materials, review municipal rules, and download necessary forms from our comprehensive resource hub.</p>
+        </div>
+        <div class="service-card-footer">
+          <span>Regularly Updated</span>
+        </div>
+      </div>
+
+      <!-- Original Service: Online Services -->
+      <div class="service-card" data-category="administrative utilities" data-title="Online Municipal Services" data-description="Apply for birth/death certificates, property tax, licenses, and raise grievances online.">
+        <div class="service-card-header">
+          <div class="service-title-group">
+            <i class="fa-solid fa-laptop-file"></i> <!-- Icon for Online Services -->
+            <h2>Online Services</h2>
+          </div>
+          <span class="service-category info">Digital Access</span>
+        </div>
+        <div class="service-card-body">
+          <p>Conveniently apply for birth/death certificates, pay property tax, manage licenses, and raise grievances through our online portal.</p>
+        </div>
+        <div class="service-card-footer">
+          <span>Available 24/7</span>
+        </div>
+      </div>
+
+      <!-- Original Service: Property Tax Payment -->
+      <div class="service-card" data-category="administrative utilities" data-title="Property Tax Payment" data-description="Pay your property tax online securely and conveniently.">
+        <div class="service-card-header">
+          <div class="service-title-group">
+            <i class="fa-solid fa-file-invoice-dollar"></i> <!-- Icon for Property Tax -->
+            <h2>Property Tax Payment</h2>
+          </div>
+          <span class="service-category info">Online Payment</span>
+        </div>
+        <div class="service-card-body">
+          <p>Pay your property tax online securely. Our portal provides a quick and easy way to fulfill your obligations. <!-- PayPal Button for Property Tax - Consider integrating this link/action differently -->
+            <!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID_HERE">
+              <input type="submit" value="Pay Now with PayPal" class="paypal-button-style">
+            </form> -->
+          </p>
+        </div>
+        <div class="service-card-footer">
+          <span>Secure & Easy</span>
+        </div>
+      </div>
+
+      <!-- Original Service: Apply for Birth/Death Certificate -->
+      <div class="service-card" data-category="administrative" data-title="Birth & Death Certificates" data-description="Submit your application for birth or death certificates and pay the required fees online.">
+        <div class="service-card-header">
+          <div class="service-title-group">
+            <i class="fa-solid fa-scroll"></i> <!-- Icon for Certificates -->
+            <h2>Birth/Death Certificates</h2>
+          </div>
+          <span class="service-category info">Application</span>
+        </div>
+        <div class="service-card-body">
+          <p>Submit your application for birth or death certificates and pay the required fees online. Streamlined process for your convenience.
+             <!-- PayPal Button - Consider integrating this link/action differently -->
+          </p>
+        </div>
+        <div class="service-card-footer">
+          <span>Online Application</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+<script src="navigation.js"></script>
+</body>
+</html>

@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600&family=Lemon&family=Patua+One&family=Poppins:wght@200;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    height: auto;
+    position: relative;
+    background-color: white;
+}
+
+@import url('navigation.css');
+
+nav .wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+nav .nav-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+nav .nav-container img {
+    width: 60px;
+    transition: transform 0.3s ease;
+}
+
+nav .nav-container img:hover {
+    transform: scale(1.05);
+}
+
+nav .nav-container .links a {
+    font-size: 1.1rem;
+    color: var(--text-color, #222);
+    text-decoration: none;
+    margin: 0 15px;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+nav .nav-container .links a:hover {
+    color: var(--primary-color, #3a86ff);
+}
+
+nav .nav-container .links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--primary-color, #3a86ff);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+nav .nav-container .links a:hover::after {
+    width: 70%;
+}
+
+nav .nav-container .search {
+    width: 280px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: 40px;
+    display: flex;
+    border-radius: 50px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+nav .nav-container .search:focus-within {
+    box-shadow: 0 0 0 2px var(--primary-color, #3a86ff);
+    border-color: var(--primary-color, #3a86ff);
+}
+
+nav .nav-container .search input {
+    width: 85%;
+    padding-left: 15px;
+    font-size: 0.9rem;
+    height: 100%;
+    background-color: transparent;
+    color: #333;
+    border: none;
+    outline: none;
+}
+
+nav .nav-container .search i {
+    color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    width: 15%;
+    cursor: pointer;
+    height: 100%;
+    transition: color 0.3s ease;
+}
+
+nav .nav-container .search i:hover {
+    color: var(--primary-color, #3a86ff);
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+
+
+.landingpage {
+    background-image: url(build.jpg);
+    background-size: cover;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landingpage .content {
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.landingpage .content .heading {
+    margin-top: -100px;
+    max-width: 460px;
+    width: 100%;
+}
+
+.landingpage .content .heading h3 {
+    color: #FFB6C1;
+    font-size: 1.6rem;
+}
+
+.landingpage .content .heading h1 {
+    color: #FFB6C1;
+    line-height: -2rem;
+    font-size: 4.5rem;
+}
+
+.landingpage .content .heading p {
+    color: #f1eeee;
+    font-size: 1.2rem;
+}
+
+.landingpage .content .heading button {
+    width: 220px;
+    height: 50px;
+    margin: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px #FFB6C1;
+    letter-spacing: 1.5px;
+    word-spacing: 5px;
+    background: rgb(50, 39, 39);
+    color: white;
+    border-radius: 20px;
+    font-family: 'Patua One', serif;
+    transition: 0.5s linear;
+}
+
+.landingpage .content .heading button:hover {
+    scale: 1.05;
+}
+
+.landingpage .content .image img {
+    width: 800px;
+    transform: rotate(40deg);
+}
+
+
+
+
+.aboutus {
+    box-shadow: -5px -5px 100px black;
+    background: rgb(23, 27, 28);
+}
+
+.aboutus .container {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.aboutus .container .aboutus-content {
+    color: white;
+    width: 30%;
+}
+
+.aboutus .container img {
+    filter: drop-shadow(0 0 10px white);
+}
+
+.aboutus .container .aboutus-content h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Patua One', serif;
+    color: rgb(150, 105, 105);
+    letter-spacing: 1px;
+    font-size: 4rem;
+}
+
+.aboutus .container .aboutus-content p {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+
+
+
+
+.details-services {
+    background-color: rgb(23, 27, 28);
+}
+
+.details-services .title {
+    width: 100%;
+    margin: 30px 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.details-services .title h1 {
+    font-size: 3rem;
+    color: rgb(150, 105, 105);
+    text-align: center;
+    width: 40%;
+}
+
+.details-services .services {
+    margin: 0 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.details-services .services .card {
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(150, 105, 105);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.details-services .services:hover .card {
+    scale: 1.1;
+    transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.details-services .services:hover .card:not(:hover) {
+    opacity: 0.2;
+    backdrop-filter: blur(10px);
+    scale: 1;
+}
+
+.details-services .services .card img {
+    width: 70%;
+    margin: 0 15%;
+}
+
+.details-services .services .card .discription {
+    color: white;
+    margin: 0 10px;
+}
+
+.details-services .services .card .discription h1 {
+
+    font-family: 'Patua One', serif;
+    letter-spacing: 1px;
+    margin: 8px 0;
+    text-align: center;
+}
+
+.details-services .services .card .discription p {
+    float: left;
+    margin-left: 2px;
+}
+
+.details-services .services .card .discription {
+    float: right;
+    font-family: 'Lemon', serif;
+    margin: 10px 20px 10px 0;
+}

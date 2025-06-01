@@ -1,0 +1,119 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: var(--background-color, #000000);
+  color: var(--text-color-primary, #FFFFFF);
+}
+
+:root {
+  --topic-color: #FFB6C1; 
+  --background-color: #000000; 
+  --text-color-primary: #FFFFFF; 
+  --text-color-secondary: #CCCCCC; 
+  --accent-color-primary: #FF69B4; 
+  --accent-color-secondary: #FFC0CB; 
+
+  --primary-color: var(--topic-color); 
+  --secondary-color: var(--accent-color-primary);
+  --accent-color: var(--accent-color-secondary);
+}
+
+.updates-section {
+  padding: 120px 20px 60px;
+  text-align: center;
+}
+
+.updates-section h1 {
+  color: var(--topic-color, #FFB6C1);
+  margin-bottom: 10px;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.updates-section h1 i {
+  margin-right: 10px;
+}
+
+.updates-section .section-intro {
+  color: var(--text-color-secondary, #CCCCCC);
+  font-size: 1.1em;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.updates-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px; /* Increased gap */
+}
+
+.update-card {
+  background-color: #1a1a1a; 
+  padding: 25px;
+  box-shadow: 0 8px 16px rgba(255, 105, 180, 0.2); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 5px solid var(--accent-color-primary, #FF69B4); 
+  border: 1px solid var(--accent-color-secondary, #FFC0CB);
+  display: flex; 
+  align-items: flex-start; 
+  gap: 20px;
+}
+
+.update-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(255, 105, 180, 0.3);
+}
+
+.update-icon {
+  font-size: 2.2rem; 
+  color: var(--accent-color-primary, #FF69B4); 
+  padding-top: 5px;
+  min-width: 40px; 
+  text-align: center;
+  flex-shrink: 0; 
+}
+
+.update-content {
+  flex-grow: 1; 
+}
+
+.update-card h3 {
+  color: var(--topic-color, #FFB6C1);
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.6em;
+}
+
+.update-card .date {
+  font-size: 0.9em;
+  color: var(--text-color-secondary, #CCCCCC);
+  margin-bottom: 15px;
+  display: block; 
+}
+
+.update-card p {
+  color: var(--text-color-secondary, #CCCCCC); 
+  font-size: 1em;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.update-card .read-more {
+  color: var(--accent-color-primary, #FF69B4);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  padding: 8px 15px;
+  border-radius: 20px;
+  background-color: var(--accent-color-secondary, #FFC0CB);
+  color: var(--background-color, #000000);
+}
+
+.update-card .read-more:hover {
+  background-color: var(--accent-color-primary, #FF69B4);
+  color: var(--text-color-primary, #FFFFFF);
+  text-decoration: none;
+}

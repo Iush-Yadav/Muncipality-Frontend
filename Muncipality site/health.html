@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Post - Fulhera Municipality</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="health.css">
+  <link rel="stylesheet" href="navigation.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-wrapper">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <!-- <img src="path/to/your/logo.svg" alt="Fulhera Municipality Logo"> -->
+          <a href="index.html" class="logo-link"><h1>Fulhera Municipality</h1></a>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" data-key="home">Home</a>
+          <a href="services.html" data-key="services">Services</a>
+          <a href="updates.html" data-key="dailyUpdates">Daily Updates</a>
+          <a href="info.html" data-key="informations">Information</a>
+          <a href="health.html" data-key="healthPost" class="active">Health Post</a>
+          <a href="map.html" data-key="map">Map</a>
+          <a href="contact.html" data-key="contacts">Contact</a>
+        </div>
+        <div class="nav-search">
+          <input type="search" placeholder="Search...">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <button class="nav-mobile-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="health-section">
+    <h1><i class="fas fa-hospital-user"></i> Municipality Health Post & Services</h1>
+    <p class="section-intro">Dedicated to providing accessible and quality healthcare services to all residents of Fulhera.</p>
+    
+    <div class="health-services-grid">
+      <div class="health-service-card">
+        <div class="health-icon"><i class="fas fa-stethoscope"></i></div>
+        <h3>General Health Checkups</h3>
+        <p>Regular health checkups available. Visit our health posts for consultations with qualified medical professionals. Free checkups every Tuesday!</p>
+        <a href="#" class="learn-more">Book Appointment &raquo;</a>
+      </div>
+      <div class="health-service-card">
+        <div class="health-icon"><i class="fas fa-pills"></i></div> <!-- Changed icon for variety -->
+        <h3>Emergency Medical Services</h3>
+        <p>24/7 emergency medical services available. Our team is ready to respond to any health crisis promptly and efficiently.</p>
+        <a href="contact.html" class="learn-more">Call Emergency Line &raquo;</a>
+      </div>
+      <div class="health-service-card">
+        <div class="health-icon"><i class="fas fa-syringe"></i></div>
+        <h3>Vaccination & Immunization</h3>
+        <p>Information on vaccination drives, including Covid-19 vaccination centers (e.g., Ward 4), and routine immunization programs for children.</p>
+        <a href="#" class="learn-more">Vaccination Schedule &raquo;</a>
+      </div>
+      <div class="health-service-card">
+        <div class="health-icon"><i class="fas fa-baby"></i></div>
+        <h3>Maternal & Child Health</h3>
+        <p>Dedicated services for expectant mothers and young children, including prenatal care, postnatal care, and child wellness clinics.</p>
+        <a href="#" class="learn-more">MCH Programs &raquo;</a>
+      </div>
+      <div class="health-service-card">
+        <div class="health-icon"><i class="fas fa-notes-medical"></i></div>
+        <h3>Health Awareness Programs</h3>
+        <p>Regularly conducted health camps and awareness programs on various health issues, hygiene, and preventive care.</p>
+        <a href="#" class="learn-more">Upcoming Events &raquo;</a>
+      </div>
+      <div class="health-service-card">
+        <div class="health-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <h3>Our Health Post Locations</h3>
+        <p>Find the nearest Municipality Health Post. We have centers conveniently located across Fulhera to serve you better.</p>
+        <a href="map.html" class="learn-more">View on Map &raquo;</a>
+      </div>
+    </div>
+  </section>
+
+<script src="navigation.js"></script>
+</body>
+</html>

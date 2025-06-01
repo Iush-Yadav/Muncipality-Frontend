@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map - Fulhera Municipality</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="map.css">
+  <link rel="stylesheet" href="navigation.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-wrapper">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <!-- <img src="path/to/your/logo.svg" alt="Fulhera Municipality Logo"> -->
+          <a href="index.html" class="logo-link"><h1>Fulhera Municipality</h1></a>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" data-key="home">Home</a>
+          <a href="services.html" data-key="services">Services</a>
+          <a href="updates.html" data-key="dailyUpdates">Daily Updates</a>
+          <a href="info.html" data-key="informations">Information</a>
+          <a href="health.html" data-key="healthPost">Health Post</a>
+          <a href="map.html" data-key="map" class="active">Map</a>
+          <a href="contact.html" data-key="contacts">Contact</a>
+        </div>
+        <div class="nav-search">
+          <input type="search" placeholder="Search...">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <button class="nav-mobile-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="map-section">
+    <h1><i class="fas fa-map-marked-alt"></i> Explore Fulhera Municipality</h1>
+    <p class="section-intro">Use the interactive map below to explore Fulhera, find key locations, and get directions.</p>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890123456!2dYOUR_LONGITUDE!3dYOUR_LATITUDE!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3AYOUR_PLACE_ID!2sFulhera%20Municipality%20Office!5e0!3m2!1sen!2sin!4v1234567890123" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="map-key-locations">
+      <h2>Key Locations:</h2>
+      <ul>
+        <li><i class="fas fa-landmark"></i> Municipality Office</li>
+        <li><i class="fas fa-hospital"></i> Central Health Post</li>
+        <li><i class="fas fa-school"></i> Fulhera High School</li>
+        <li><i class="fas fa-tree"></i> Central Park</li>
+        <li><i class="fas fa-bus"></i> Main Bus Stand</li>
+      </ul>
+    </div>
+  </section>
+
+<script src="navigation.js"></script>
+</body>
+</html>
