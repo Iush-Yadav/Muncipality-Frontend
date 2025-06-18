@@ -18,15 +18,4 @@ Frontend: HTML, CSS, JavaScript
 
 Framework/Library: [Add here if you used Tailwind, Bootstrap, React, etc.]
 
-📁 Folder Structure
-Edit
-├── index.html
-├── /css
-│   └── style.css
-├── /js
-│   └── script.js
-├── /images
-├── /pages
-│   └── about.html
-│   └── services.html
-│   └── contact.html............
+
