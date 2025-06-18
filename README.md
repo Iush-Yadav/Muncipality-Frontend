@@ -1,5 +1,5 @@
 🏛️ Municipality Website
-A fully responsive and user-friendly website developed for a local municipality to provide essential public services and information online. This project focuses on a clean UI/UX and ease of access for citizens.
+A fully responsive and user-friendly frontend of website developed for a local municipality to provide essential public services and information online. This project focuses on a clean UI/UX and ease of access for citizens.
 
 📌 Features
 
@@ -15,7 +15,4 @@ A fully responsive and user-friendly website developed for a local municipality 
 
 🛠️ Tech Stack
 Frontend: HTML, CSS, JavaScript
-
-Framework/Library: [Add here if you used Tailwind, Bootstrap, React, etc.]
-
 
